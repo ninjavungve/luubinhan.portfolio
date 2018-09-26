@@ -1,2 +1,37 @@
 @import 'variable';
 @import 'mixin';
+
+body {
+  background: #F7F7F7;
+  min-height: 100vh;
+}
+img {
+  max-width: 100%;
+}
+.section-portfolio {
+  background: #F7F7F7;
+  .inner {
+    padding: 50px 0;
+  }
+  .section-header {
+    text-align: center;
+  }
+}
+/* Footer
+-------------------------------------------------------------- */
+.scroll-top-wrapper{
+  
+}
+.footer {
+  background: #fff;  
+  color: $muted;
+  .footer-inner {
+    padding: $glutter 0;
+    a {
+      font-weight: bold;
+      color: $primary-color;
+    }
+  }
+  
+}
+/* Footer --------------------------------------------- */

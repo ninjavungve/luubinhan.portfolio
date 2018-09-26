@@ -2,101 +2,34 @@
 <html lang="en">
 
 <head>
+
+    <title>MyStyle - Search</title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Document</title>
-
     <meta name="format-detection" content="telephone=no">
 
     <!-- Favicon 32x32 and 180x180 -->
-    <link rel="icon" sizes="32x32" href="" type="image/png" />
-    <link rel="icon" sizes="180x180" href="" type="image/png" />
+    <link rel="icon" sizes="32x32" href="images/favi.png" type="image/png" />
+    <link rel="icon" sizes="180x180" href="images/favi180.png" type="image/png" />
 
     <!-- CDN -->
-    <link href="https://fonts.googleapis.com/css?family=Cookie|Poppins" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&amp;subset=vietnamese" rel="stylesheet">
 
-    <!-- DO NOT TOUCH -->
-    <link rel="stylesheet" type="text/css" href="css/woocommerce.css">
-    <link rel="stylesheet" type="text/css" href="css/woocommerce-layout.css">
-
-    <!-- AUTO CONCAT -->
-    <link rel="stylesheet" type="text/css" href="css/concat.css">
-
-    <!-- MANUAL UPDATE -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/style-responsive.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
-    <!-- Init MAPS -->
-    <script>
-        var map;
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('map'));
-        }
-    </script>
-
-    <script src="js/animations.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.viewport.mini.js"></script>
-    <script src="js/jquery.parallax-1.1.3.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/jquery.appear.js"></script>
-    <script src="js/jquery.scrollTo.min.js"></script>
-
-    <script src="js/plugin.js"></script>
-    <script src="js/main.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhktXAG6guKrLzHSMjAqPO9ki-SKP556Y" async defer></script>
+    <script src="js/common.js"></script>
 </head>
 
-<body class="mystyle">
-    <!-- TOOLBAR -->
-    <div id="toolbar">
-        <nav class="toolbar">
-            <div class="toolbar-inner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-xs-12 col-lg-8">
-                            <ul class="top-nav">
-                                <li><a href="3-page.html">Single Page</a></li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Single Post<span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a href="1-single.html">Standard</a>
-                                            <a href="1-single.html">Gallery</a>
-                                            <a href="1-single.html">Video</a>
-                                            <a href="1-single.html">Job</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="4-archive.html">Archive</a></li>
-                                <li><a href="2-404.html">404</a></li>
-                                <li><a href="5-search.html">Search Result</a></li>
-                                <li><a href="17-contact-form-7.html">Contact Form 7</a></li>
-                                <li><a href="7-woo-login.html">Woo - Login</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 col-xs-12 col-lg-4">
-                            <div class="topnote">
-                                0943.870.301 - luubinhan1989@gmail.com
-                            </div>
-                        </div>
-                    </div>
-                    <!-- row -->
-                </div>
-                <!-- container -->
-            </div>
-            <!-- toolbar-inner -->
-        </nav>
-        <!-- toolbar -->
-    </div>
-    <!-- / TOOLBAR -->
-
+<body class="mystyle page-home">
     <!-- HEADER -->
     <div id="header">
         <header class="header">
@@ -106,11 +39,11 @@
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				    <span class="sr-only">Toggle navigation</span>
-				    <span class="icon-bar"></span>
-				    <span class="icon-bar"></span>
-				    <span class="icon-bar"></span>
-				  </button>
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
                             <a class="navbar-brand" href="index.html">
                                 <img src="images/logo.png" alt="">
                             </a>
@@ -169,15 +102,11 @@
                                 </li>
                             </ul>
 
-                        </div>
-                        <!-- /.navbar-collapse -->
-                    </div>
-                    <!-- /.container-fluid -->
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
                 </nav>
-            </div>
-            <!-- / header-inner -->
-        </header>
-        <!-- / header -->
+            </div> <!-- / header-inner -->
+        </header> <!-- / header -->
     </div>
     <!-- / HEADER -->
 
@@ -191,58 +120,50 @@
                             <header class="search-title page-title archive-page-title">
                                 Your search for 'keyword'
                                 <span>
-	            10 results
-	          </span>
+                                    10 results
+                                </span>
                             </header>
                             <div class="search-posts">
                                 <section class="row row-posts">
 
 
-                                </section>
-                                <!-- row-posts -->
+                                </section> <!-- row-posts -->
 
-                            </div>
-                            <!-- search-posts -->
-                        </div>
-                        <!-- main -->
-                    </div>
-                    <!-- col -->
+                            </div><!-- search-posts -->
+                        </div><!-- main -->
+                    </div> <!-- col -->
                     <div class="col-md-3">
                         <div class="primary-sidebar">
 
                         </div>
                     </div>
-                </div>
-                <!-- row -->
+                </div><!-- row -->
+            </div> <!-- container -->
+            <div class="container scroll-top-wrapper">
+                <a class="scroll_top" href="#top">
+                    <i class="ion-android-arrow-dropup-circle"></i>
+                </a>
             </div>
-            <!-- container -->
-
-        </div>
-        <!-- master-inner -->
-    </main>
-    <!-- master -->
-
-    <!-- FOOTER -->
-    <div id="footer">
-        <footer class="footer">
-            <section class="footer-inner">
-                <div class="container">
-                    <div class="copyright">
-                        Contact : 0943.870.301 - Email: luubinhan1989@gmail.com
-                    </div>
-                    <!-- copyright -->
-                    <div class="credit">
-                        © Copyright 2011-2016 An.Luu, All rights reserved
-                    </div>
-                    <!-- credit -->
-                </div>
-                <!-- container -->
-            </section>
-            <!-- / footer-inner -->
-        </footer>
-        <!-- / footer -->
-    </div>
-    <!-- / FOOTER -->
+            <!-- FOOTER -->
+            <div id="footer">
+                <footer class="footer">
+                    <section class="footer-inner">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <small>
+                                        Contact : <a href="tel:0943.870.301">0943.870.301</a> - Email: <a href="mailto:luubinhan1989@gmail.com">luubinhan1989@gmail.com</a>
+                                    </small>
+                                </div>
+                                <div class="col text-right">
+                                    <small>© Copyright 2011-2016 An.Luu, All rights reserved</small>
+                                </div>
+                            </div>
+                        </div> <!-- container -->
+                    </section> <!-- / footer-inner -->
+                </footer> <!-- / footer -->
+            </div>
+            <!-- / FOOTER -->
 </body>
 
 </html>
