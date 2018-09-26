@@ -85,3 +85,5 @@ $(function() {
 # Icon Fonts
 
 http://ionicons.com/
+
+https://vip-restaurant.vamtam.com/?demostyle=%7B%22Header%20Layout%22%3A%22Single%20Row%22%2C%22Top%20Bar%22%3A%22Off%22%2C%22Layout%22%3A%22Full%20width%22%2C%22Styles%22%3A%22orange%22%7D

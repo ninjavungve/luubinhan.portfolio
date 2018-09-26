@@ -4,6 +4,8 @@
 body {
   background: #F7F7F7;
   min-height: 100vh;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
 }
 img {
   max-width: 100%;
@@ -19,8 +21,12 @@ img {
 }
 /* Footer
 -------------------------------------------------------------- */
-.scroll-top-wrapper{
-  
+.scroll_top{
+  position: absolute;
+  right: 0;
+}
+.master-inner {
+  min-height: calc(100vh - 85px);
 }
 .footer {
   background: #fff;  
@@ -35,3 +41,28 @@ img {
   
 }
 /* Footer --------------------------------------------- */
+
+.card-portfolio {
+  img {
+    display: inline-block;
+    vertical-align: bottom;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+    transition: all .3s ease;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.1);
+    border-radius: 2px;
+    &:hover {
+      box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16);
+      margin-top: -10px;
+      margin-bottom: 10px;
+    }
+  }
+  .card-image {
+    margin-bottom: 10px;
+  }
+  .card-title {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+}
