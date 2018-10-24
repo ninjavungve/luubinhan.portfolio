@@ -164,7 +164,6 @@
     "react/prop-types": 1,
     "react/react-in-jsx-scope": 1,
     "react/self-closing-comp": 1,
-    "react/jsx-filename-extension": 0,
     "react/sort-comp": 1
   }
 }

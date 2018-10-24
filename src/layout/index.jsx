@@ -2,7 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import config from "../../data/SiteConfig";
 
-import '../styles/main.scss'
+import "../styles/main.scss";
 
 export default class MainLayout extends React.Component {
   render() {

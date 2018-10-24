@@ -1,12 +1,11 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
-import Layout from "../layout";
 import UserInfo from "../components/UserInfo/UserInfo";
 import Disqus from "../components/Disqus/Disqus";
 import PostTags from "../components/PostTags/PostTags";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
-import SEO from "../components/SEO/SEO";
+import SEO from "../components/SEO";
 import config from "../../data/SiteConfig";
 import "./b16-tomorrow-dark.css";
 import "./post.css";
@@ -23,7 +22,7 @@ export default class PostTemplate extends React.Component {
       post.category_id = config.postDefaultCategoryID;
     }
     return (
-      <Layout>
+      <div>
         <div>
           <Helmet>
             <title>{`${post.title} | ${config.siteTitle}`}</title>
@@ -40,7 +39,7 @@ export default class PostTemplate extends React.Component {
             <Disqus postNode={postNode} />
           </div>
         </div>
-      </Layout>
+      </div>
     );
   }
 }
