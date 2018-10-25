@@ -32,6 +32,11 @@ module.exports = {
       label: "Twitter",
       url: "https://twitter.com/luubinhan",
       iconClassName: "twitter"
+    },
+    {
+      label: "Codepen",
+      url: "https://codepen.io/luckyluu/",
+      iconClassName: "codepen"
     }
   ],
   copyright: "Copyright © 2018. luckyluu", // Copyright string for the footer of the website and RSS feed.
