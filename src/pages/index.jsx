@@ -13,10 +13,30 @@ import TaiSao from "../components/TaiSao";
 import About from "../components/About";
 import UserLinks from "../components/UserLinks/UserLinks.jsx";
 import config from "../../data/SiteConfig";
+import {DuAn} from "../../data/DuAn";
 
 import logo from "../../static/logos/favi32.png";
 import vi from "../../static/vi.png";
 import en from "../../static/us.svg";
+
+const CardPortfolio = (props) => (
+  <div className="card-portfolio">
+    <div className="card-image">
+      <a target="_blank" rel="noopener noreferrer" href={props.url}>
+        <img
+          src={props.thumbnail}
+          alt={props.name}
+        />
+      </a>
+    </div>
+    <div className="card-title">
+      {props.name}
+    </div>
+    <div className="tags">
+      {props.tags.map((tag, index) => <span className="tag" key={index}>{tag}</span>)}
+    </div>
+  </div>
+);
 
 const Logo = <a className="logo"><img src={logo} alt={config.siteTitle} /></a>;
 const engFlag = <img src={en} alt="Change to English"/>;
@@ -172,88 +192,13 @@ class Index extends React.Component {
                               </div>
                             </div>
                           </div>
-                          <div className="col-sm-4">
-                            <div className="card-portfolio">
-                              <div className="card-image">
-                                <img
-                                  src="https://vip-restaurant.vamtam.com/wp-content/uploads/2016/03/Screen-1.jpg"
-                                  alt=""
-                                />
+                          {Object.keys(DuAn).map(name => {
+                            return (
+                              <div key={name} className="col-sm-4">
+                                <CardPortfolio {...DuAn[name]} />
                               </div>
-                              <div className="card-title">
-                                Gourmet / Restaurant
-                              </div>
-                              <div className="tags">
-                                <button className="tag">
-                                  HTML/CSS
-                                </button>
-                                <button className="tag">
-                                  Wordpress
-                                </button>
-                                <button className="tag ">
-                                  Design
-                                </button>
-                                <button className="tag ">
-                                  React
-                                </button>
-                                <button className="tag ">
-                                  Joomla
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="col-sm-4">
-                            <div className="card-portfolio">
-                              <div className="card-image">
-                                <img src="https://vip-restaurant.vamtam.com/wp-content/uploads/2016/03/Screen-2.jpg" />
-                              </div>
-                              <div className="card-title">
-                                Gourmet / Restaurant
-                              </div>
-                              <div className="tags">
-                                <button className="tag ">
-                                  HTML/CSS
-                                </button>
-                                <button className="tag ">
-                                  Wordpress
-                                </button>
-                                <button className="tag ">
-                                  Design
-                                </button>
-                                <button className="tag ">
-                                  React
-                                </button>
-                                <button className="tag ">
-                                  Joomla
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="col-sm-4">
-                            <div className="card-portfolio">
-                              <div className="card-image">
-                                <img src="https://vip-restaurant.vamtam.com/wp-content/uploads/2016/03/Screen-3.jpg" />
-                              </div>
-                              <div className="card-title">Coffee Shop</div>
-                              <div className="tags">
-                                <button className="tag ">
-                                  HTML/CSS
-                                </button>
-                                <button className="tag ">
-                                  Wordpress
-                                </button>
-                                <button className="tag ">
-                                  Design
-                                </button>
-                                <button className="tag ">
-                                  React
-                                </button>
-                                <button className="tag ">
-                                  Joomla
-                                </button>
-                              </div>
-                            </div>
-                          </div>
+                            );
+                          })}
                         </div>
                       </div>
                     </div>

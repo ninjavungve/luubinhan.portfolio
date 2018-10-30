@@ -509,6 +509,7 @@ img {
       padding: 3px 20px;
       color: #fff;
       position: relative;
+      z-index: 2;
       &:after {
         content: "";
         z-index: 0;
@@ -530,6 +531,7 @@ img {
       background: #C9DC08;
       padding: 3px 20px;
       position: relative;
+      z-index: 1;
       &:before {
         content: "";
         z-index: 0;
@@ -552,7 +554,7 @@ img {
 .section-portfolio {
   background: #F7F7F7;
   .inner {
-    padding: 50px 0 200px;
+    padding: 50px 0 100px;
   }
   .section-header {
     margin-bottom: 40px;    
@@ -725,6 +727,7 @@ img {
   background: #b4d4e3 url("/images/bg-feature.jpg") no-repeat center bottom;
 }
 .card-portfolio {
+  margin-bottom: 50px;
   img {
     display: inline-block;
     vertical-align: bottom;
@@ -818,7 +821,6 @@ img {
   white-space: nowrap;  
   transition: all .15s ease-in-out;
   border: none;
-  cursor: pointer;
   &:hover{
     box-shadow: 0 0 0 2px lighten($bg-gray,1%);
   }
