@@ -24,10 +24,7 @@ export default class HTML extends React.Component {
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
           />
-          <link
-            href="https://fonts.googleapis.com/css?family=Quicksand"
-            rel="stylesheet"
-          />
+          <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&amp;subset=vietnamese" rel="stylesheet" />
           {this.props.headComponents}
         </head>
         <body {...this.props.bodyAttributes}>

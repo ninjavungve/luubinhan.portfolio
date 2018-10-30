@@ -7,7 +7,7 @@
 -------------------------------------------------------------- */
 body {
   min-height: 100vh;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Chakra Petch', sans-serif;
   font-size: 16px;
   color: $primary-text-color;
   text-rendering: optimizelegibility;
@@ -135,6 +135,9 @@ img::-moz-selection {
 /* Select-------------------------------------------------------------- */
 /* MISC 
 -------------------------------------------------------------- */
+.relative {
+  position: relative;
+}
 .pl-10 {
   padding-left: 10px;
 }
@@ -721,6 +724,8 @@ img {
 .section-bao-gia {
   background: #eef6f9 url("/images/banner.jpg") no-repeat left center;
   min-height: 800px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 .section-why {
   background: #b4d4e3 url("/images/bg-feature.jpg") no-repeat center bottom;
