@@ -4,7 +4,8 @@ import { graphql } from "gatsby";
 import {StatefulToolTip} from 'react-portal-tooltip';
 import {
   FaCoffee,
-  FaPenNib
+  FaPenNib,
+  FaExternalLinkAlt
 } from "react-icons/fa";
 
 import SEO from "../components/SEO";
@@ -23,6 +24,7 @@ const CardPortfolio = (props) => (
   <div className="card-portfolio">
     <div className="card-image">
       <a target="_blank" rel="noopener noreferrer" href={props.url}>
+        <span className="caption"><FaExternalLinkAlt /></span>
         <img
           src={props.thumbnail}
           alt={props.name}
@@ -30,7 +32,9 @@ const CardPortfolio = (props) => (
       </a>
     </div>
     <div className="card-title">
-      {props.name}
+      <a target="_blank" rel="noopener noreferrer" href={props.url}>
+        {props.name} <FaExternalLinkAlt />
+      </a>
     </div>
     <div className="tags">
       {props.tags.map((tag, index) => <span className="tag" key={index}>{tag}</span>)}
@@ -128,27 +132,27 @@ class Index extends React.Component {
                 <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                   <li>
                     <a href="">
-                      Design (<strong>20</strong>)
+                      Design
                     </a>
                   </li>
                   <li>
                     <a href="">
-                      HTML/CSS (<strong>15</strong>)
+                      HTML/CSS
                     </a>
                   </li>
                   <li>
                     <a href="">
-                      Wordpress (<strong>15</strong>)
+                      Wordpress
                     </a>
                   </li>
                   <li>
                     <a href="">
-                      React JS (<strong>15</strong>)
+                      React JS
                     </a>
                   </li>
                   <li>
                     <a href="">
-                      Khác (<strong>10</strong>)
+                      Khác
                     </a>
                   </li>
                 </ul>
@@ -208,11 +212,6 @@ class Index extends React.Component {
                 <BaoGia />
               </div>
             </div>
-          </div>
-          <div className="scroll-top-wrapper">
-            <a className="scroll_top" href="#top">
-              <i className="ion-android-arrow-dropup-circle" />
-            </a>
           </div>
           <div className="copy-right">
             <small>

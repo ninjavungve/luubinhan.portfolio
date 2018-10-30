@@ -6,7 +6,6 @@
 /* List - Text - Link
 -------------------------------------------------------------- */
 body {
-  background: #F7F7F7;
   min-height: 100vh;
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
@@ -552,7 +551,6 @@ img {
   font-size: 20px;
 }
 .section-portfolio {
-  background: #F7F7F7;
   .inner {
     padding: 50px 0 100px;
   }
@@ -722,6 +720,7 @@ img {
 }
 .section-bao-gia {
   background: #eef6f9 url("/images/banner.jpg") no-repeat left center;
+  min-height: 800px;
 }
 .section-why {
   background: #b4d4e3 url("/images/bg-feature.jpg") no-repeat center bottom;
@@ -745,10 +744,43 @@ img {
   }
   .card-image {
     margin-bottom: 10px;
+    a {
+      position: relative;
+      display: block;
+      .caption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;		
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        opacity: 0;
+        transition: all 0.8s ease;
+        font-size: 3rem;
+        background: rgba(255, 255, 255, .8);
+      }
+      &:hover {
+        .caption {
+          opacity: 1;
+        }
+        img {
+          -webkit-filter: grayscale(70%);
+          filter: grayscale(70%);
+        }
+      }
+    }
   }
   .card-title {
     text-align: center;
     font-size: 1.3rem;
+    svg {
+      color: #a9aebf;
+      width: .8em;
+      height: .8em;
+    }
   }
 }
 .nav-right {
@@ -813,14 +845,14 @@ img {
   }  
 }
 
-.tag{
+.tag {
   display: inline-block;
   background-color: #fff;
   padding: 5px 10px;
   line-height: 1;  
   white-space: nowrap;  
   transition: all .15s ease-in-out;
-  border: none;
+  border: 1px solid rgba(63, 70, 94, .1);
   &:hover{
     box-shadow: 0 0 0 2px lighten($bg-gray,1%);
   }
