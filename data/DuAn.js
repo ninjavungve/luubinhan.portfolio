@@ -28,5 +28,11 @@ export const DuAn = {
     name: 'Bakco Brochure',
     url: '#',
     tags: ["other", "design"]
+  },
+  drill: {
+    thumbnail: '',
+    name: 'Drill Inc',
+    url: 'http://www.drill-inc.jp/',
+    tags: ["css"]
   }
 };

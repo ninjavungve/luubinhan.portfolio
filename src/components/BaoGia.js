@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class BaoGia extends Component {
   render() {
     return (
-      <section className="section section-portfolio">
+      <section className="section section-bao-gia">
         <div className="inner">
           <div className="container">
             <div className="section-header">

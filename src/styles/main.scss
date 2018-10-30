@@ -482,19 +482,77 @@ img {
 img {
   max-width: 100%;
 }
-.section {
-  min-height: 100vh;
-}
 .section-header {
-  h1 strong {
-    display: block;
-    font-size: 1.2em;
+  h1 {
+    display: inline-block;
+    position: relative;
+    
+    span.transform {
+      background: #000;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: #fff;
+      display: inline-block;
+      transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(-5deg);
+      -moz-transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(-5deg);
+      -webkit-transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(-5deg);
+      -o-transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(-5deg);
+      -ms-transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(-5deg);
+      perspective: 1000px;-webkit-perspective: 1000px; perspective-origin: 0% 90%; -webkit-perspective-origin: 0% 90%;
+    }    
+     
+    
+    strong {
+      display: inline-block;
+      font-size: 1.2em;
+      background: #00A5B4;
+      padding: 3px 20px;
+      color: #fff;
+      position: relative;
+      &:after {
+        content: "";
+        z-index: 0;
+        border-width: 5px 5px 0 0;
+        border-color: #00a5b6;
+        border-style: solid;
+        display: block;
+        position: absolute;
+        right: -10px;
+        top: -10px;
+        width: 50px;
+        height: 50px;
+      }
+    }
+    .second {
+      display: block;
+      margin-left: 10px;
+      color: #fff;
+      background: #C9DC08;
+      padding: 3px 20px;
+      position: relative;
+      &:before {
+        content: "";
+        z-index: 0;
+        border-width: 0 0 5px 5px;
+        border-color: #c6d809;
+        border-style: solid;
+        display: block;
+        position: absolute;
+        left: -10px;
+        bottom: -10px;
+        width: 50px;
+        height: 50px;
+      } 
+    }
   }
+}
+.header-desc {
+  font-size: 20px;
 }
 .section-portfolio {
   background: #F7F7F7;
   .inner {
-    padding: 50px 0;
+    padding: 50px 0 200px;
   }
   .section-header {
     margin-bottom: 40px;    
@@ -505,6 +563,8 @@ img {
   .sidebar {
     width: 60px;
     background: $bg-dark;
+    -webkit-box-shadow:inset -7px 0 7px 0px rgba(0,0,0,0.4);
+    box-shadow:inset -7px 0 7px 0px rgba(0,0,0,0.4);
     position: fixed;
     left: 0;
     top: 0;
@@ -658,6 +718,12 @@ img {
     min-width: 50%;
   }
 }
+.section-bao-gia {
+  background: #eef6f9 url("/images/banner.jpg") no-repeat left center;
+}
+.section-why {
+  background: #b4d4e3 url("/images/bg-feature.jpg") no-repeat center bottom;
+}
 .card-portfolio {
   img {
     display: inline-block;
@@ -746,8 +812,7 @@ img {
 
 .tag{
   display: inline-block;
-  border-radius: 0.25em;
-  background-color: $bg-gray;
+  background-color: #fff;
   padding: 5px 10px;
   line-height: 1;  
   white-space: nowrap;  
@@ -770,66 +835,6 @@ img {
   &:hover{
     .close{
       color: rgba(0,0,0,.9);
-    }
-  }
-  &.blue{
-    background-color: $blue;
-    color: #fff;
-    .close{
-      color: rgba(0,0,0,.1);
-    }
-    &:hover{
-      box-shadow: 0 0 0 2px rgba(0,123,255,.5);
-    }
-  }
-  &.green{
-    background-color: $green;   
-    .close{
-      color: rgba(0,0,0,.6);
-    }
-    &:hover{
-      box-shadow: 0 0 0 2px lighten($green,10%);
-    }
-  }
-  &.red{
-    background-color: $red;   
-    color: #fff;
-    
-    .close{
-      color: rgba(0,0,0,.1);
-    }
-    &:hover{
-      box-shadow: 0 0 0 2px lighten($red,20%);
-    }
-  }
-  &.yellow{
-    background-color: $yellow;   
-    color: #fff;
-    &:hover{
-      box-shadow: 0 0 0 2px lighten($yellow,20%);
-    }
-    .close{
-      color: rgba(0,0,0,.1);
-    }
-  }
-  &.cyan{
-    background-color: $cyan;   
-    color: #fff;
-    &:hover{
-      box-shadow: 0 0 0 2px lighten($cyan,20%);
-    }
-    .close{
-      color: rgba(0,0,0,.1);
-    }
-  }
-  &.dark{
-    background-color: $black;   
-    color: #fff;
-    &:hover{
-      box-shadow: 0 0 0 2px lighten($black,20%);
-    }
-    .close{
-      color: rgba(0,0,0,.1);
     }
   }
 }

@@ -6,14 +6,17 @@ class TaiSao extends Component {
   render() {
     return (
       <section className="section section-why">
-        <div className="inner">
-          <div className="container">
-            <div className="section-header">
-              <h1><strong>Nguyên Tắc </strong>Trong Công Việc</h1>
-            </div>
+        <div className="container">
+          <div className="section-header">
+            <h1>
+              <strong>Nguyên Tắc </strong>
+              <span className="second">Trong Công Việc</span>
+            </h1>
+          </div>
+          <div className="inner">
             <div className="section-body">
-              <div className="mb-40">
-                Our foam works in three ways to draw heat from your body and disperse it out of the mattress.
+              <div className="mb-40 header-desc">
+                Dự án dù nhỏ, dù lớn, dù làm độc lập hay làm trong 1 team
               </div>
               <div className="row">
                 <div className="col-sm-3">
@@ -25,7 +28,7 @@ class TaiSao extends Component {
                       TRÁCH NHIỆM
                     </div>
                     <div className="feature-desc">
-                      When it comes to insulation, duck down is the best temperature regulator out there. Plus, we love that it's humanely sourced.
+                      Hoàn thành công việc đã hứa, không diện lý do làm trì trệ dự án.
                     </div>
                   </div>
                 </div>
@@ -38,7 +41,7 @@ class TaiSao extends Component {
                       CHẤT LƯỢNG
                     </div>
                     <div className="feature-desc">
-                      You’ll never feel weighed down because the breathable cotton cover is thirty percent lighter than others on the market.
+                      Đặt mục tiêu cho tất cả dự án như những sản phẩm có thể tự hào nói "make-by-me".
                     </div>
                   </div>
                 </div>
@@ -51,7 +54,7 @@ class TaiSao extends Component {
                       TRUNG THỰC
                     </div>
                     <div className="feature-desc">
-                      Forget about swapping or switching midyear — the Casper duvet is designed for comfort in any season.
+                      Không lấp liếm, dấu lỗi, hay tiết lộ bất kỳ thông tin nào ra ngoài.
                     </div>
                   </div>
                 </div>
@@ -64,8 +67,7 @@ class TaiSao extends Component {
                       TẬN TÂM
                     </div>
                     <div className="feature-desc">
-                      Forget about swapping or switching midyear — the Casper duvet is designed for comfort in any season.
-                    </div>
+                      Sẵn sàng hổ trợ, chỉ dẫn, sửa lỗi nếu có vấn đề xảy ra dự án sau khi hoàn thành.                    </div>
                   </div>
                 </div>
               </div>

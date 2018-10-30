@@ -1,16 +1,23 @@
 @import "../styles/_variables";
 
 .section-why {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background: $primary-color;
   color: #fff;
+  .container {
+    position: relative;
+    z-index: 2;
+  }
   .section-header {
-    margin-bottom: 50px;
+    position: absolute;
+    left: 0;
+    top: -63px;
+  }
+  .inner {
+    padding-top: 140px;
+    padding-bottom: 140px;
   }
   .section-body {
     padding: 40px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.87);
   }
   .item-feature{
     .feature-image {
@@ -43,10 +50,10 @@
   .feature-1 {
     .feature-image {
       border-radius: 78% 22% 70% 30% / 30% 63% 37% 70%;
-      background: #ffc578;
-      background: -moz-linear-gradient(top, #ffc578 0%, #f47631 100%);
-      background: -webkit-linear-gradient(top, #ffc578 0%,#f47631 100%);
-      background: linear-gradient(to bottom, #ffc578 0%,#f47631 100%);
+      background: #cadd09;
+      background: -moz-linear-gradient(top, #cadd09 0%, #a4b407 100%);
+      background: -webkit-linear-gradient(top, #cadd09 0%,#a4b407 100%);
+      background: linear-gradient(to bottom, #cadd09 0%,#a4b407 100%);
       &:before {
         border-radius: 78% 22% 70% 30% / 30% 63% 37% 70%;
         -moz-transform: rotate(29deg);
@@ -60,10 +67,10 @@
   .feature-2 {
     .feature-image {
       border-radius: 32% 68% 70% 30% / 60% 63% 37% 40%;
-      background: #ffc578;
-      background: -moz-linear-gradient(-45deg, #ffc578 0%, #f47631 100%);
-      background: -webkit-linear-gradient(-45deg, #ffc578 0%,#f47631 100%);
-      background: linear-gradient(135deg, #ffc578 0%,#f47631 100%);
+      background: #cadd09;
+      background: -moz-linear-gradient(-45deg, #cadd09 0%, #a4b407 100%);
+      background: -webkit-linear-gradient(-45deg, #cadd09 0%,#a4b407 100%);
+      background: linear-gradient(135deg, #cadd09 0%,#a4b407 100%);
       &:before {
         border-radius: 32% 68% 70% 30% / 60% 63% 37% 40%;
         -moz-transform: rotate(29deg);
@@ -77,10 +84,10 @@
   .feature-3 {
     .feature-image {
       border-radius: 20% 80% 42% 58% / 60% 32% 68% 40%;
-      background: #ffc578;
-      background: -moz-linear-gradient(-90deg, #ffc578 0%, #f47631 100%);
-      background: -webkit-linear-gradient(-90deg, #ffc578 0%,#f47631 100%);
-      background: linear-gradient(90deg, #ffc578 0%,#f47631 100%);
+      background: #cadd09;
+      background: -moz-linear-gradient(-90deg, #cadd09 0%, #a4b407 100%);
+      background: -webkit-linear-gradient(-90deg, #cadd09 0%,#a4b407 100%);
+      background: linear-gradient(90deg, #cadd09 0%,#a4b407 100%);
       &:before {
         border-radius: 20% 80% 42% 58% / 60% 32% 68% 40%;
         -moz-transform: rotate(29deg);
@@ -94,10 +101,10 @@
   .feature-4 {
     .feature-image {
       border-radius: 55% 45% 42% 58% / 69% 32% 68% 31%;
-      background: #ffc578;
-      background: -moz-linear-gradient(-135deg, #ffc578 0%, #f47631 100%);
-      background: -webkit-linear-gradient(-135deg, #ffc578 0%,#f47631 100%);
-      background: linear-gradient(45deg, #ffc578 0%,#f47631 100%);
+      background: #cadd09;
+      background: -moz-linear-gradient(-135deg, #cadd09 0%, #a4b407 100%);
+      background: -webkit-linear-gradient(-135deg, #cadd09 0%,#a4b407 100%);
+      background: linear-gradient(45deg, #cadd09 0%,#a4b407 100%);
       &:before {
         border-radius: 55% 45% 42% 58% / 69% 32% 68% 31%;
         -moz-transform: rotate(29deg);

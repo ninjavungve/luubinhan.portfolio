@@ -153,7 +153,10 @@ class Index extends React.Component {
                   <div className="inner">
                     <div className="container">
                       <div className="section-header">
-                        <h1><strong>Dự Án</strong> Đã Thực Hiện</h1>
+                        <h1>
+                          <strong>Dự Án</strong>
+                          <span className="second">Đã Thực Hiện</span>
+                        </h1>
                       </div>
                       <div className="section-body">
                         <div className="row">
@@ -181,19 +184,19 @@ class Index extends React.Component {
                                 Gourmet / Restaurant
                               </div>
                               <div className="tags">
-                                <button className="tag cyan">
+                                <button className="tag">
                                   HTML/CSS
                                 </button>
-                                <button className="tag cyan">
+                                <button className="tag">
                                   Wordpress
                                 </button>
-                                <button className="tag cyan">
+                                <button className="tag ">
                                   Design
                                 </button>
-                                <button className="tag cyan">
+                                <button className="tag ">
                                   React
                                 </button>
-                                <button className="tag cyan">
+                                <button className="tag ">
                                   Joomla
                                 </button>
                               </div>
@@ -208,19 +211,19 @@ class Index extends React.Component {
                                 Gourmet / Restaurant
                               </div>
                               <div className="tags">
-                                <button className="tag cyan">
+                                <button className="tag ">
                                   HTML/CSS
                                 </button>
-                                <button className="tag cyan">
+                                <button className="tag ">
                                   Wordpress
                                 </button>
-                                <button className="tag cyan">
+                                <button className="tag ">
                                   Design
                                 </button>
-                                <button className="tag cyan">
+                                <button className="tag ">
                                   React
                                 </button>
-                                <button className="tag cyan">
+                                <button className="tag ">
                                   Joomla
                                 </button>
                               </div>
@@ -233,19 +236,19 @@ class Index extends React.Component {
                               </div>
                               <div className="card-title">Coffee Shop</div>
                               <div className="tags">
-                                <button className="tag cyan">
+                                <button className="tag ">
                                   HTML/CSS
                                 </button>
-                                <button className="tag cyan">
+                                <button className="tag ">
                                   Wordpress
                                 </button>
-                                <button className="tag cyan">
+                                <button className="tag ">
                                   Design
                                 </button>
-                                <button className="tag cyan">
+                                <button className="tag ">
                                   React
                                 </button>
-                                <button className="tag cyan">
+                                <button className="tag ">
                                   Joomla
                                 </button>
                               </div>
@@ -256,7 +259,6 @@ class Index extends React.Component {
                     </div>
                   </div>
                 </section>
-                <About />
                 <TaiSao />
                 <BaoGia />
               </div>
