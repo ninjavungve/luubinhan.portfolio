@@ -210,6 +210,7 @@ class Index extends React.Component {
                 </section>
                 <TaiSao />
                 <BaoGia />
+                <About />
               </div>
             </div>
           </div>

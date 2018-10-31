@@ -27,36 +27,52 @@ class BaoGia extends Component {
                     <AccordionItem>
                       <AccordionItemTitle>
                         <h5 className="relative">
-                          Static website bằng React
+                          Single Page để giới thiệu dịch vụ, sản phẩm, công ty
                           <i className="accordion__arrow" role="presentation"/>
                         </h5>
+                        <div>Static website bằng React</div>
                       </AccordionItemTitle>
                       <AccordionItemBody>
-                        <p>Body content</p>
+                        <ul>
+                          <li>Chi phí thấp</li>
+                          <li>Không bao gồm trang admin để tự cập nhập</li>
+                          <li>Website load cực nhanh</li>
+                          <li>An toàn tuyệt đối</li>
+                          <li>Nội dung không cần cập nhập thường xuyên</li>
+                        </ul>
                       </AccordionItemBody>
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemTitle>
                         <h5 className="relative">
-                          Website làm bằng Wordpress
+                          Trang brochure công ty, shop bán hàng nhỏ
                           <i className="accordion__arrow" role="presentation"/>
                         </h5>
-                        <div>With a bit of description</div>
+                        <div>Website làm bằng Wordpress</div>
                       </AccordionItemTitle>
                       <AccordionItemBody>
-                        <p>Body content</p>
+                        <ul>
+                          <li>Sử dụng Wordpress CMS</li>
+                          <li>Bao gồm trang admin để tự cập nhập</li>
+                          <li>Tùy biến theo nhu cầu riêng</li>
+                        </ul>
                       </AccordionItemBody>
                     </AccordionItem>
                     <AccordionItem>
                       <AccordionItemTitle>
                         <h5 className="relative">
-                          Single Page Application bằng React
+                          FrontEnd Developer chuyên React
                           <i className="accordion__arrow" role="presentation"/>
                         </h5>
-                        <div>With a bit of description</div>
+                        <div>Single Page Application bằng React</div>
                       </AccordionItemTitle>
                       <AccordionItemBody>
-                        <p>Body content</p>
+                        <ul>
+                          <li>Bạn là dev BackEnd</li>
+                          <li>Bạn cần người "chơi chung" trong team</li>
+                          <li>React Native, React JS</li>
+                          <li>Tham vọng đem sản phẩm của bạn tới triệu user</li>
+                        </ul>
                       </AccordionItemBody>
                     </AccordionItem>
                     <AccordionItem>
@@ -65,10 +81,14 @@ class BaoGia extends Component {
                           Quản lý bảo trì Website đang có
                           <i className="accordion__arrow" role="presentation"/>
                         </h5>
-                        <div>With a bit of description</div>
+                        <div>Đã có website Wordpress</div>
                       </AccordionItemTitle>
                       <AccordionItemBody>
-                        <p>Body content</p>
+                        <ul>
+                          <li>Cần cập nhập, bảo trì, nâng cấp</li>
+                          <li>Thực hiện sao lưu, cải thiện tốc độ</li>
+                          <li>Bổ sung tính năng mới</li>
+                        </ul>
                       </AccordionItemBody>
                     </AccordionItem>
                   </Accordion>

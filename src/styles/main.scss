@@ -5,6 +5,7 @@
 
 /* List - Text - Link
 -------------------------------------------------------------- */
+* {outline-color: $primary-color}
 body {
   min-height: 100vh;
   font-family: 'Chakra Petch', sans-serif;
@@ -347,6 +348,7 @@ img {
 -------------------------------------------------------------- */
 
 .btn {
+  border-radius: 0;
   + .btn {
     margin-left: 20px;
   }
@@ -650,23 +652,9 @@ img {
 .section-about {
   background: #F7F7F7 url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFEAAABRBAMAAABYoVcFAAAAD1BMVEXz9PQnKCi1tra0tbV+fn7KMl1FAAAABHRSTlMABTo1xkK+KwAAAM9JREFUeF6N18ENwzAMxVCGEwj1AkXRAersP1wHiA/kUfh4d7F5Jo+uH2vSkuHabQmsicsTKhWVikpFpaJSUamoVFQqKhWVikpFpaJSUamoVFQqKhWVikpFpaJSUamoVFQqKhWVikpFpaJSUamoVFQqKhWVikpFX1T05tTn0Pdwe3PKTcw1tLwqKhWVikpFpaJSUamoVFQqKhWVikpFpaJSUamoVFQqKhWVikpFpaJSUamoVFQqKhWVikpFpaJSUamoVFQqKhWVEzrJZE3/j/51KRPoGdQNhAAAAABJRU5ErkJggg==");
   position: relative;
-  &:before {
-    content: "";
-    display: block;
-    left: 0;
-    right: 0;
-    top: 0;
-    height: 100px;
-    position: absolute;
-    z-index: 1;
-    background: -moz-linear-gradient(top, rgba(247,247,247,1) 0%, rgba(255,255,255,0) 100%);
-    background: -webkit-linear-gradient(top, rgba(247,247,247,1) 0%,rgba(255,255,255,0) 100%);
-    background: linear-gradient(to bottom, rgba(247,247,247,1) 0%,rgba(255,255,255,0) 100%);
-  }
   > .inner {
     padding-top: 100px;
     padding-bottom: 100px;
-    display: flex;
   }
   .profile-img {
     border-radius: 32% 68% 70% 30% / 60% 63% 37% 40%;
@@ -723,10 +711,43 @@ img {
 }
 .section-bao-gia {
   background: #eef6f9 url("/images/banner.jpg") no-repeat left center;
-  min-height: 800px;
+  min-height: 100vh;
   padding-top: 90px;
   padding-bottom: 90px;
+  .section-header {
+    margin-bottom: 40px;
+  }
+  .accordion {
+    border: none;
+    .accordion__title {
+      h5 {
+        font-weight: bold;
+        padding-right: 30px;
+      }
+      background: rgba(255,255,255,.7);
+      color: $primary-text-color;      
+      &:focus,
+      &:active {
+        outline-color: $primary-color;
+      }
+      
+    }
+    .accordion__title[aria-selected=true]{
+      background: $primary-color;
+      color: #fff;
+    }
+    .accordion__body--hidden,
+    .accordion__body {
+      background: rgba(0,165,180,.8);
+      color: #fff;
+    }
+    .accordion__item + .accordion__item {
+      border-top: none;
+      margin-top: 10px;
+    }
+  }
 }
+
 .section-why {
   background: #b4d4e3 url("/images/bg-feature.jpg") no-repeat center bottom;
 }
