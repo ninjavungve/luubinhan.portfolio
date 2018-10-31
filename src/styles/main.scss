@@ -652,6 +652,7 @@ img {
 .section-about {
   background: #F7F7F7 url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFEAAABRBAMAAABYoVcFAAAAD1BMVEXz9PQnKCi1tra0tbV+fn7KMl1FAAAABHRSTlMABTo1xkK+KwAAAM9JREFUeF6N18ENwzAMxVCGEwj1AkXRAersP1wHiA/kUfh4d7F5Jo+uH2vSkuHabQmsicsTKhWVikpFpaJSUamoVFQqKhWVikpFpaJSUamoVFQqKhWVikpFpaJSUamoVFQqKhWVikpFpaJSUamoVFQqKhWVikpFX1T05tTn0Pdwe3PKTcw1tLwqKhWVikpFpaJSUamoVFQqKhWVikpFpaJSUamoVFQqKhWVikpFpaJSUamoVFQqKhWVikpFpaJSUamoVFQqKhWVEzrJZE3/j/51KRPoGdQNhAAAAABJRU5ErkJggg==");
   position: relative;
+  min-height: 100vh;
   > .inner {
     padding-top: 100px;
     padding-bottom: 100px;

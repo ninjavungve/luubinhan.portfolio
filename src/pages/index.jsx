@@ -1,12 +1,9 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
-import {StatefulToolTip} from 'react-portal-tooltip';
-import {
-  FaCoffee,
-  FaPenNib,
-  FaExternalLinkAlt
-} from "react-icons/fa";
+import { StatefulToolTip } from "react-portal-tooltip";
+import { Link } from "react-scroll";
+import { FaCoffee, FaPenNib, FaExternalLinkAlt } from "react-icons/fa";
 
 import SEO from "../components/SEO";
 import BaoGia from "../components/BaoGia";
@@ -14,21 +11,20 @@ import TaiSao from "../components/TaiSao";
 import About from "../components/About";
 import UserLinks from "../components/UserLinks/UserLinks.jsx";
 import config from "../../data/SiteConfig";
-import {DuAn} from "../../data/DuAn";
+import { DuAn } from "../../data/DuAn";
 
 import logo from "../../static/logos/favi32.png";
 import vi from "../../static/vi.png";
 import en from "../../static/us.svg";
 
-const CardPortfolio = (props) => (
+const CardPortfolio = props => (
   <div className="card-portfolio">
     <div className="card-image">
       <a target="_blank" rel="noopener noreferrer" href={props.url}>
-        <span className="caption"><FaExternalLinkAlt /></span>
-        <img
-          src={props.thumbnail}
-          alt={props.name}
-        />
+        <span className="caption">
+          <FaExternalLinkAlt />
+        </span>
+        <img src={props.thumbnail} alt={props.name} />
       </a>
     </div>
     <div className="card-title">
@@ -37,18 +33,49 @@ const CardPortfolio = (props) => (
       </a>
     </div>
     <div className="tags">
-      {props.tags.map((tag, index) => <span className="tag" key={index}>{tag}</span>)}
+      {props.tags.map((tag, index) => (
+        <span className="tag" key={index}>
+          {tag}
+        </span>
+      ))}
     </div>
   </div>
 );
 
-const Logo = <a className="logo"><img src={logo} alt={config.siteTitle} /></a>;
-const engFlag = <img src={en} alt="Change to English"/>;
-const viFlag = <img src={vi} alt="Tiếng Việt"/>;
+const Logo = (
+  <span className="logo">
+    <Link
+      activeClass="active"
+      to="sectionPortfolio"
+      spy={true}
+      smooth={true}
+      offset={0}
+      duration={500}
+    >
+      <img src={logo} alt={config.siteTitle} />
+    </Link>
+  </span>
+);
+const engFlag = <img src={en} alt="Change to English" />;
+const viFlag = <img src={vi} alt="Tiếng Việt" />;
+const IconCafe = (
+  <span className="icon-sidebar">
+    <Link
+      activeClass="active"
+      to="sectionAbout"
+      spy={true}
+      smooth={true}
+      offset={50}
+      duration={500}
+    >
+      <FaCoffee />
+    </Link>
+  </span>
+);
 const style = {
   style: {
     boxShadow: "none",
-    background: '#f47631'
+    background: "#f47631"
   },
   arrowStyle: {
     borderColor: false,
@@ -69,9 +96,7 @@ class Index extends React.Component {
                 arrow="center"
                 style={style}
               >
-                <div className="my-tip">
-                  Quay lên đầu trang
-                </div>
+                <div className="my-tip">Quay lên đầu trang</div>
               </StatefulToolTip>
               <a className="lang active">
                 <StatefulToolTip
@@ -80,9 +105,7 @@ class Index extends React.Component {
                   arrow="center"
                   style={style}
                 >
-                  <div className="my-tip">
-                    English
-                  </div>
+                  <div className="my-tip">English</div>
                 </StatefulToolTip>
               </a>
               <a className="lang">
@@ -92,25 +115,25 @@ class Index extends React.Component {
                   arrow="center"
                   style={style}
                 >
-                  <div className="my-tip">
-                    Tiếng Việt
-                  </div>
+                  <div className="my-tip">Tiếng Việt</div>
                 </StatefulToolTip>
               </a>
             </div>
             <div className="middle-section">
               <StatefulToolTip
-                parent={<a href="/blog" className="icon-sidebar"><FaPenNib /></a>}
+                parent={
+                  <a href="/blog" className="icon-sidebar">
+                    <FaPenNib />
+                  </a>
+                }
                 position="right"
                 arrow="center"
                 style={style}
               >
-                <div className="my-tip">
-                  Blog của mình
-                </div>
+                <div className="my-tip">Blog của mình</div>
               </StatefulToolTip>
               <StatefulToolTip
-                parent={<span className="icon-sidebar"><FaCoffee /></span>}
+                parent={IconCafe}
                 position="right"
                 arrow="center"
                 style={style}
@@ -126,54 +149,12 @@ class Index extends React.Component {
           </div>
         </div>
         <div className="content">
-          <div className="container">
-            <div className="navbar navbar-expand-lg navbar-light navbar-filter">
-              <div className="collapse navbar-collapse">
-                <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-                  <li>
-                    <a href="">
-                      Design
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      HTML/CSS
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Wordpress
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      React JS
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      Khác
-                    </a>
-                  </li>
-                </ul>
-                <div className="ml-auto">
-                  <ul className="nav nav-right">
-                    <li>
-                      <a href="" className="btn btn-primary my-2 my-sm-0">
-                        Báo giá
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
           <div className="index-container">
             <Helmet title={config.siteTitle} />
             <SEO />
             <div className="master">
               <div className="master-inner">
-                <section className="section section-portfolio">
+                <section className="section section-portfolio" id="sectionPortfolio">
                   <div className="inner">
                     <div className="container">
                       <div className="section-header">
@@ -183,6 +164,36 @@ class Index extends React.Component {
                         </h1>
                       </div>
                       <div className="section-body">
+                        <div className="navbar navbar-expand-lg navbar-light navbar-filter">
+                          <div className="collapse navbar-collapse">
+                            <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+                              <li>
+                                <a href="">Design</a>
+                              </li>
+                              <li>
+                                <a href="">HTML/CSS</a>
+                              </li>
+                              <li>
+                                <a href="">Wordpress</a>
+                              </li>
+                              <li>
+                                <a href="">React JS</a>
+                              </li>
+                              <li>
+                                <a href="">Khác</a>
+                              </li>
+                            </ul>
+                            <div className="ml-auto">
+                              <ul className="nav nav-right">
+                                <li>
+                                  <a href="" className="btn btn-primary my-2 my-sm-0">
+                                    Báo giá
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
                         <div className="row">
                           <div className="col-sm-4">
                             <div className="card-portfolio">
@@ -210,14 +221,14 @@ class Index extends React.Component {
                 </section>
                 <TaiSao />
                 <BaoGia />
-                <About />
+                <div id="sectionAbout">
+                  <About />
+                </div>
               </div>
             </div>
           </div>
           <div className="copy-right">
-            <small>
-              © 2018 luubinhan
-            </small>
+            <small>© 2018 luubinhan</small>
           </div>
         </div>
       </div>
