@@ -80,14 +80,7 @@ module.exports = {
         start_url: config.pathPrefix,
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
-        display: "minimal-ui",
-        icons: [
-          {
-            src: "/logos/favi128.png",
-            sizes: "192x192",
-            type: "image/png"
-          }
-        ]
+        display: "minimal-ui"      
       }
     },
     "gatsby-plugin-offline",

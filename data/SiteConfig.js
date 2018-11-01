@@ -7,8 +7,8 @@ module.exports = {
   pathPrefix: "/portfolio",
   siteDescription: "luckyluu portfolio",
   siteRss: "/rss.xml", // Path to the RSS file.
-  siteFBAppID: "445556375516928", // FB Application ID for using app insights
-  googleAnalyticsID: "UA-29685098-2", // GA tracking ID.
+  siteFBAppID: "", // FB Application ID for using app insights
+  googleAnalyticsID: "", // GA tracking ID.
   disqusShortname: "luckyluu-blog", // Disqus shortname.
   postDefaultCategoryID: "React", // Default category for posts.
   userName: "luckyluu", // Username to display in the author segment.
