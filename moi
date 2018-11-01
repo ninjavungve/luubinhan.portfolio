@@ -98,6 +98,26 @@ class Index extends React.Component {
               >
                 <div className="my-tip">Quay lên đầu trang</div>
               </StatefulToolTip>
+              <a className="lang active">
+                <StatefulToolTip
+                  parent={engFlag}
+                  position="right"
+                  arrow="center"
+                  style={style}
+                >
+                  <div className="my-tip">English</div>
+                </StatefulToolTip>
+              </a>
+              <a className="lang">
+                <StatefulToolTip
+                  parent={viFlag}
+                  position="right"
+                  arrow="center"
+                  style={style}
+                >
+                  <div className="my-tip">Tiếng Việt</div>
+                </StatefulToolTip>
+              </a>
             </div>
             <div className="middle-section">
               <StatefulToolTip

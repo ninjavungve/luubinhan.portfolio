@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import myImg from '../../static/images/my-image.jpg';
 
 class About extends Component {
   render() {
@@ -12,16 +13,20 @@ class About extends Component {
                 <span className="second">hoặc follow mình</span>
               </h1>
             </div>
-            <div className="section-body">
+            <div className="section-body" style={{paddingTop: 70}}>
               <div className="row">
                 <div className="col-sm-6">
-                  <p>Mình không nghiện cafe, mình chỉ nghiện pha cafe! Nếu bạn có nhả ý mời mình cafe để chia sẽ một dự án quá ngầu của bạn</p>
-                  <p>Nếu bạn quan tâm đến Front-End có thể ghé quá blog cá nhân, mình cố gắng đưa thêm nhiều nội dung có ích cho mọi người lên đây.</p>
-                  <p>Nếu có bài viết nào bạn thấy chưa đúng, hy vọng bạn báo ngay với mình để kịp thời chỉnh sửa.</p>
+                  <p>Nếu bạn có dự án muốn làm cùng mình, cafe thôi, hoặc có thể liên hệ với mình bằng một trong các cách sau</p>
+                  <dl>
+                    <dt>Email</dt>
+                    <dd>luubinhan1989@gmail.com</dd>
+                    <dt>Skype</dt>
+                    <dd>luu.binh.an</dd>
+                  </dl>
                 </div>
                 <div className="col-sm-6">
                   <div className="profile-image">
-                    <img className="profile-img" src="http://placehold.it/700x700" alt=""/>
+                    <img className="profile-img" src={myImg} alt=""/>
                   </div>
                 </div>
               </div>
