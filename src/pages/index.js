@@ -8,6 +8,7 @@ import Bio from '../components/Bio'
 import Layout from '../components/layout'
 import { rhythm } from '../utils/typography'
 import { DuAn } from "../../data/DuAn";
+import TaiSao from "../components/TaiSao";
 
 import "../styles/main.scss";
 
@@ -61,7 +62,7 @@ class BlogIndex extends React.Component {
                       <div className="section-header">
                         <h1>
                           <strong>Dự Án</strong>
-                          <span className="second">Đã Thực Hiện</span>
+                          <span className="second">Yêu Thích</span>
                         </h1>
                       </div>
                       <div className="section-body">
@@ -120,6 +121,7 @@ class BlogIndex extends React.Component {
                     </div>
                   </div>
                 </section>
+                <TaiSao />
               </div>
             </div>
           </div>

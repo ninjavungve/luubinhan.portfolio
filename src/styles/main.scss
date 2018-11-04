@@ -492,9 +492,8 @@ img {
 }
 .section-header {
   h1 {
-    display: inline-block;
     position: relative;
-    
+    display: inline-block;    
     span.transform {
       background: #000;
       padding-left: 20px;
@@ -508,10 +507,7 @@ img {
       -ms-transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(-5deg);
       perspective: 1000px;-webkit-perspective: 1000px; perspective-origin: 0% 90%; -webkit-perspective-origin: 0% 90%;
     }    
-     
-    
     strong {
-      display: inline-block;
       font-size: 1.2em;
       background: #00A5B4;
       padding: 3px 20px;
@@ -533,13 +529,13 @@ img {
       }
     }
     .second {
-      display: block;
       margin-left: 10px;
       color: #fff;
       background: #C9DC08;
       padding: 3px 20px;
       position: relative;
       z-index: 1;
+      display: block;
       &:before {
         content: "";
         z-index: 0;
