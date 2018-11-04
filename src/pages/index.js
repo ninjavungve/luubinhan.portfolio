@@ -9,6 +9,7 @@ import Layout from '../components/layout'
 import { rhythm } from '../utils/typography'
 import { DuAn } from "../../data/DuAn";
 import TaiSao from "../components/TaiSao";
+import About from "../components/About";
 
 import "../styles/main.scss";
 
@@ -122,6 +123,9 @@ class BlogIndex extends React.Component {
                   </div>
                 </section>
                 <TaiSao />
+                <div id="sectionAbout">
+                  <About />
+                </div>
               </div>
             </div>
           </div>

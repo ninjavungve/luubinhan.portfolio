@@ -89,7 +89,15 @@ class Template extends React.Component {
                 style={style}
               >
                 <div className="my-tip">Blog của mình</div>
-              </StatefulToolTip>             
+              </StatefulToolTip> 
+              <StatefulToolTip
+                parent={IconCafe}
+                position="right"
+                arrow="center"
+                style={style}
+              >
+                <div className="my-tip">Rủ Cafe</div>
+              </StatefulToolTip>          
             </div>
             <div className="bottom-section">
               <UserLinks config={config} />

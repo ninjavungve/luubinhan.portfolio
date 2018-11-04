@@ -16,7 +16,7 @@ class TaiSao extends Component {
           <div className="inner">
             <div className="section-body">
               <div className="mb-40 header-desc">
-                Dự án dù nhỏ, dù lớn, dù làm độc lập hay làm trong 1 team
+               
               </div>
               <div className="row">
                 <div className="col-sm-3">
