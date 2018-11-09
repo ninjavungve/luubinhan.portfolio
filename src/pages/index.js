@@ -86,15 +86,6 @@ class BlogIndex extends React.Component {
                                 <a href="">Khác</a>
                               </li>
                             </ul>
-                            <div className="ml-auto">
-                              <ul className="nav nav-right">
-                                <li>
-                                  <a href="" className="btn btn-primary my-2 my-sm-0">
-                                    Báo giá
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
                           </div>
                         </div>
                         <div className="row">

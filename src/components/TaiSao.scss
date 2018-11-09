@@ -1,7 +1,6 @@
 @import "../styles/_variables";
 
 .section-why {
-  color: #fff;
   .container {
     position: relative;
     z-index: 2;
@@ -14,10 +13,6 @@
   .inner {
     padding-top: 140px;
     padding-bottom: 140px;
-  }
-  .section-body {
-    padding: 40px;
-    background: rgba(0, 0, 0, 0.87);
   }
   .item-feature{
     .feature-image {
@@ -44,7 +39,7 @@
     .feature-title {
       margin-bottom: 10px;
       font-weight: 700;
-      font-size: $font-size-large;
+      font-size: 7rem;
     }
   }
   .feature-1 {

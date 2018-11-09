@@ -15,49 +15,36 @@ class TaiSao extends Component {
           </div>
           <div className="inner">
             <div className="section-body">
-              <div className="mb-40 header-desc">
-               
+              <div className="item-feature feature-1">
+                <div className="feature-image">
+                  01
+                </div>
+                <div className="feature-title">
+                  TRÁCH NHIỆM
+                </div>
               </div>
-              <div className="row">
-                <div className="col-sm-3">
-                  <div className="item-feature feature-1">
-                    <div className="feature-image">
-                      01
-                    </div>
-                    <div className="feature-title">
-                      TRÁCH NHIỆM
-                    </div>
-                  </div>
+              <div className="item-feature feature-2">
+                <div className="feature-image">
+                  02
                 </div>
-                <div className="col-sm-3">
-                  <div className="item-feature feature-2">
-                    <div className="feature-image">
-                      02
-                    </div>
-                    <div className="feature-title">
-                      CHẤT LƯỢNG
-                    </div>
-                  </div>
+                <div className="feature-title">
+                  CHẤT LƯỢNG
                 </div>
-                <div className="col-sm-3">
-                  <div className="item-feature feature-3">
-                    <div className="feature-image">
-                      03
-                    </div>
-                    <div className="feature-title">
-                      TRUNG THỰC
-                    </div>
-                  </div>
+              </div>
+              <div className="item-feature feature-3">
+                <div className="feature-image">
+                  03
                 </div>
-                <div className="col-sm-3">
-                  <div className="item-feature feature-4">
-                    <div className="feature-image">
-                      04
-                    </div>
-                    <div className="feature-title">
-                      TẬN TÂM
-                    </div>
-                  </div>
+                <div className="feature-title">
+                  TRUNG THỰC
+                </div>
+              </div>
+              <div className="item-feature feature-4">
+                <div className="feature-image">
+                  04
+                </div>
+                <div className="feature-title">
+                  TẬN TÂM
                 </div>
               </div>
             </div>

@@ -25,6 +25,10 @@ class About extends Component {
                     <dd>luubinhan1989@gmail.com</dd>
                     <dt>Skype</dt>
                     <dd>luu.binh.an</dd>
+                    <dt>Twitter</dt>
+                    <dd><a href="https://twitter.com/luubinhan" target="_blank" rel="noopener noreferrer">@luubinhan</a></dd>
+                    <dt>Blog</dt>
+                    <dd>luubinhan.github.io/blog</dd>
                   </dl>
                 </div>
                 <div className="col-sm-6">
