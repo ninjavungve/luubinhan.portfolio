@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
+import Typist from 'react-typist';
 import myImg from '../../static/images/my-image.jpg';
+
+import './About.scss';
 
 class About extends Component {
   render() {
     return (
       <section className="section section-about">
         <div className="inner">
-          <div className="container">
+          <div className="container-fluid">
             <div className="section-header">
               <h1>
                 <strong>Rủ Cafe</strong>
@@ -16,10 +19,17 @@ class About extends Component {
             <div className="section-body" style={{paddingTop: 70}}>
               <div className="row">
                 <div className="col-sm-6">
-                  <p>
-                    Mình là web designer và web developer đang sống ở TP.HCM. Thời gian mình không ngồi trên máy tính code, vẽ vời, hay viết blog, bạn sẽ thấy mình trên sân cầu lông hoặc một địa điểm du lịch nào đó.
-                  </p>
-                  <p>Có thể liên hệ với mình bằng một trong các cách sau</p>
+                  <div className="typing">
+                    <Typist>
+                      Mình là web designer và web developer đang sống ở TP.HCM.
+                      <br/>
+                      Thời gian mình không ngồi trên máy tính code, vẽ vời, hay viết blog
+                      <br/>
+                      bạn sẽ thấy mình trên sân cầu lông hoặc một địa điểm du lịch nào đó.
+                      <br/>
+                      Có thể liên hệ với mình bằng một trong các cách sau
+                    </Typist>
+                  </div>
                   <dl>
                     <dt>Email</dt>
                     <dd>luubinhan1989@gmail.com</dd>

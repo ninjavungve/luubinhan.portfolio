@@ -57,6 +57,10 @@ class BlogIndex extends React.Component {
           <div className="index-container">
             <div className="master">
               <div className="master-inner">
+                
+                <div id="sectionAbout">
+                  <About />
+                </div>
                 <section className="section section-portfolio" id="sectionPortfolio">
                   <div className="inner">
                     <div className="container">
@@ -114,9 +118,6 @@ class BlogIndex extends React.Component {
                   </div>
                 </section>
                 <TaiSao />
-                <div id="sectionAbout">
-                  <About />
-                </div>
               </div>
             </div>
           </div>

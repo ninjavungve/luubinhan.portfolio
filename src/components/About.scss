@@ -1,0 +1,47 @@
+@import "../styles/_variables";
+
+.Typist .Cursor {
+  display: inline-block; }
+  .Typist .Cursor--blinking {
+    opacity: 1;
+    animation: blink 1s linear infinite; }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.section-about {
+  /* background: #F7F7F7 url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFEAAABRBAMAAABYoVcFAAAAD1BMVEXz9PQnKCi1tra0tbV+fn7KMl1FAAAABHRSTlMABTo1xkK+KwAAAM9JREFUeF6N18ENwzAMxVCGEwj1AkXRAersP1wHiA/kUfh4d7F5Jo+uH2vSkuHabQmsicsTKhWVikpFpaJSUamoVFQqKhWVikpFpaJSUamoVFQqKhWVikpFpaJSUamoVFQqKhWVikpFpaJSUamoVFQqKhWVikpFX1T05tTn0Pdwe3PKTcw1tLwqKhWVikpFpaJSUamoVFQqKhWVikpFpaJSUamoVFQqKhWVikpFpaJSUamoVFQqKhWVikpFpaJSUamoVFQqKhWVEzrJZE3/j/51KRPoGdQNhAAAAABJRU5ErkJggg=="); */
+  position: relative;
+  min-height: 100vh;
+	font-size: 1.3rem;
+	background: #252627;
+	color: #fff;
+	.container-fluid {
+		padding-left: 80px;
+		padding-right: 100px;
+	}
+  > .inner {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  a {
+    color: $primary-color;
+	}
+	.typing {
+		min-height: 300px;
+		line-height: 2;
+	}
+  .profile-image {
+		max-width: 580px;
+		opacity: .9;
+  }
+  .profile-desc {
+    flex-basis: 50%;
+    min-width: 50%;
+  }
+}
