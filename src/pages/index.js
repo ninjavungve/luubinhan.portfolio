@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import { FaCoffee, FaPenNib, FaExternalLinkAlt } from "react-icons/fa";
+import ScrollAnim from 'rc-scroll-anim';
 
 import Bio from '../components/Bio'
 import Layout from '../components/layout'
@@ -12,6 +13,9 @@ import TaiSao from "../components/TaiSao";
 import About from "../components/About";
 
 import "../styles/main.scss";
+
+const ScrollParallax = ScrollAnim.Parallax;
+const ScrollElement = ScrollAnim.Element;
 
 const CardPortfolio = props => (
   <div className="card-portfolio">
@@ -57,10 +61,11 @@ class BlogIndex extends React.Component {
           <div className="index-container">
             <div className="master">
               <div className="master-inner">
-                
-                <div id="sectionAbout">
-                  <About />
-                </div>
+                <ScrollElement style={{ height: "100vh" }} id="Scroll-Pack">
+                  <div id="sectionAbout">
+                    <About />
+                  </div>
+                </ScrollElement>
                 <section className="section section-portfolio" id="sectionPortfolio">
                   <div className="inner">
                     <div className="container">
@@ -118,6 +123,9 @@ class BlogIndex extends React.Component {
                   </div>
                 </section>
                 <TaiSao />
+                
+                
+                
               </div>
             </div>
           </div>
