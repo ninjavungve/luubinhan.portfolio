@@ -18,7 +18,7 @@ const ScrollParallax = ScrollAnim.Parallax;
 const ScrollElement = ScrollAnim.Element;
 
 const CardPortfolio = props => (
-  <div className="card-portfolio">
+  <div className={`card-portfolio ${props.selected === 'all' ? 'active' : props.tags.includes(props.selected) ? 'active' : 'inactive'}`}>
     <div className="card-image">
       <a target="_blank" rel="noopener noreferrer" href={props.url}>
         <span className="caption">
@@ -43,6 +43,12 @@ const CardPortfolio = props => (
 );
 
 class BlogIndex extends React.Component {
+  state = {
+    selected: 'all',
+  }
+  changeFilter = (e) => {
+    this.setState({selected: e.currentTarget.dataset.type || 'all'})
+  }
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const siteDescription = get(
@@ -79,20 +85,23 @@ class BlogIndex extends React.Component {
                         <div className="navbar navbar-expand-lg navbar-light navbar-filter">
                           <div className="collapse navbar-collapse">
                             <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-                              <li>
-                                <a href="">Design</a>
+                              <li className={this.state.selected === 'all' && 'active'}>
+                                <a data-type='all'  onClick={this.changeFilter}>All</a>
                               </li>
-                              <li>
-                                <a href="">HTML/CSS</a>
+                              <li className={this.state.selected === 'design' && 'active'}>
+                                <a  data-type='design' onClick={this.changeFilter}>Design</a>
                               </li>
-                              <li>
-                                <a href="">Wordpress</a>
+                              <li className={this.state.selected === 'css' && 'active'}>
+                                <a data-type='css' onClick={this.changeFilter}>HTML/CSS</a>
                               </li>
-                              <li>
-                                <a href="">React JS</a>
+                              <li className={this.state.selected === 'wordpress' && 'active'}>
+                                <a data-type='wordpress' onClick={this.changeFilter}>Wordpress</a>
                               </li>
-                              <li>
-                                <a href="">Khác</a>
+                              <li className={this.state.selected === 'reactjs' && 'active'}>
+                                <a data-type='reactjs' onClick={this.changeFilter}>React JS</a>
+                              </li>
+                              <li className={this.state.selected === 'other' && 'active'}>
+                                <a data-type='other' onClick={this.changeFilter}>Khác</a>
                               </li>
                             </ul>
                           </div>
@@ -113,7 +122,7 @@ class BlogIndex extends React.Component {
                           {Object.keys(DuAn).map(name => {
                             return (
                               <div key={name} className="col-sm-4">
-                                <CardPortfolio {...DuAn[name]} />
+                                <CardPortfolio selected={this.state.selected} {...DuAn[name]} />
                               </div>
                             );
                           })}
@@ -122,10 +131,7 @@ class BlogIndex extends React.Component {
                     </div>
                   </div>
                 </section>
-                <TaiSao />
-                
-                
-                
+                <TaiSao />               
               </div>
             </div>
           </div>

@@ -21,6 +21,7 @@ img {
   max-width: 100%;
 }
 a {
+  cursor: pointer;
   color: $link-color;
   text-decoration: none;
   outline: none;
@@ -43,22 +44,21 @@ dl {
   flex-wrap: wrap
 }
 dt {
-  flex-basis: 30%;
-  min-width: 30%;
+  flex-basis: 20%;
+  min-width: 20%;
   padding-right: 5%;
   margin: 0;
   padding-top: 15px;
   margin-bottom: 15px;
-  text-align: right;
+  font-weight: normal !important;
 }
 dd {
   padding: 0;
   margin: 0;
   padding-top: 15px;
   margin-bottom: 15px;
-  border-top: 1px dotted $border-color;
-  flex-basis: 65%;
-  min-width: 65%;
+  flex-basis: 70%;
+  min-width: 70%;
 }
 hr {
   margin: 20px 0;
@@ -696,6 +696,11 @@ img {
 }
 .card-portfolio {
   margin-bottom: 50px;
+  &.inactive {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: .2;
+  }
   img {
     display: inline-block;
     vertical-align: bottom;
@@ -771,7 +776,14 @@ img {
     &.navbar-right{
       margin-right: 0;
     }
-    > li{
+    > li {
+      &.active {
+        a {
+          text-decoration: none;
+          border-color: $secondary-color;
+          color: $primary-color;
+        }
+      }
       > a {
         font-size: 1.3rem;
         margin-right: 1.2em;
